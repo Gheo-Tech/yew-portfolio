@@ -1,0 +1,319 @@
+body * {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+::placeholder {
+  color: #878787 !important;
+}
+
+input[type="text"] {
+  background-color: #000f0f;
+  color: white;
+  border: 0px;
+  font-size: 15px !important;
+}
+
+.skill-visible {
+  max-height: 50px;
+  visibility: visible;
+  opacity: 1;
+  transition: max-height 1s,
+    visibility 500ms linear 500ms, opacity 500ms linear 500ms;
+  border-bottom: 2px solid #000f0f;
+}
+
+.skill-hidden {
+  max-height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: max-height 1s linear 500ms,
+      visibility 500ms, opacity 500ms;
+  border-bottom: 0px;
+}
+
+.jobmenu-visible {
+  text-overflow: clip;
+  overflow: hidden;
+  max-height: 250px;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 1500ms, max-height 2s;
+}
+
+.jobmenu-hidden {
+  text-overflow: clip;
+  overflow: hidden;
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 1s, opacity 1s, max-height 1s;
+}
+
+.jobtext {
+  padding: 0px;
+  margin: 0px;
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+.jobtext a:link {
+  color: #238581;
+}
+.jobtext a:visited {
+  color: #005551;
+}
+.jobtext a:hover {
+  color: #43a5a1;
+}
+.jobtext a:active {
+  color: white;
+}
+
+.jobtext-visible {
+  max-height: 1000px;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 200ms, max-height 2s;
+}
+
+.jobtext-hidden {
+  max-height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 2s, opacity 1s, max-height 1s;
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.mytextinput {
+  background-color: #000f0f;
+  color: white;
+  border: 0px;
+  border-top-color: currentcolor;
+  border-top-style: none;
+  border-top-width: 0px;
+  border-right-color: currentcolor;
+  border-right-style: none;
+  border-right-width: 0px;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-left-color: currentcolor;
+  border-left-style: none;
+  border-left-width: 0px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+}
+
+.projectbox {
+  background-color: #000000;
+  border-radius: 25px;
+  border: 0px;
+}
+
+.projectbox .button {
+  font-size: 13px;
+}
+
+.projectbox .button:focus {
+  color: white !important;
+  background-color: black !important;
+  font-size: 13px;
+  transition: 1s;
+}
+
+.projectbox:hover {
+  background-color: #000808;
+}
+
+.projectbox:focus .button {
+  color: black;
+  background-color: white;
+  animation: rotatex 1s linear;
+  font-size: 15px;
+  transition: font-size 500ms linear 1s; 
+}
+
+.projectbox .button:hover {
+  border-radius: 2px;
+}
+
+.projectimg {
+  opacity: 0.3;
+  max-height: 150px;
+  border-radius: 25px;
+  transition: opacity 1s, max-height 1s;
+}
+
+.projectbox :hover .projectimg {
+  max-height: 180px;
+  opacity: 1;
+  transition: opacity 1s, max-height 1s;
+}
+
+@keyframes rotatex{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(45deg);
+    }
+    40%{
+        transform: rotate(-45deg);
+    }
+    60%{
+        transform: rotate(45deg);
+    }
+    80%{
+        transform: rotate(-45deg);
+    }
+    0%{
+        transform: rotate(0deg);
+    }
+}
+
+.jobbox {
+  background-color: #000000;
+  border-radius: 25px
+}
+
+.jobbox:hover {
+  background-color: #000808;
+}
+
+.jobbutton {
+  border: 0px !important;
+}
+
+.jobbuttonbolder {
+  border: 0px !important;
+  font-weight: bolder;
+}
+
+.jobbutton:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  color: white !important;
+  background-color: black !important;
+}
+
+.jobbuttonbolder:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  color: white !important;
+  background-color: black !important;
+}
+
+.homecolumnleft {
+  animation: homeflyinleft 2s ease-out;
+}
+
+@keyframes homeflyinleft {
+ 0%   {
+ transform: scale(80%);
+ }
+ 100% {
+ transform: scale(100%);
+ }
+}
+
+.homecolumnright {
+  max-height: 90vh;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.homedemocode {
+  position: relative;
+  top: 0px;
+  min-width: 600px;
+  background-color: black;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 12px;
+  color: #5f5f5f;
+  animation: homedemoscroll 200s linear infinite;
+}
+
+@keyframes homedemoscroll {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -4500px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.skill-desc {
+   margin-top: 5px !important;
+   line-height: 0.9;
+   color: #878787;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-group {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+  .skill-category {
+    color: #afafaf;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .skill-text {
+    line-height: 1;
+    margin-top: 5px !important;
+    margin-bottom: 2px !important;
+  }
+  .skill-level {
+    text-align: right;
+    line-height: 0.8;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+  }
+  .skill-desc {
+    font-size: 12px;
+    line-height: 1;
+  }
+  .skill-visible {
+    max-height: 65px;
+  }
+}

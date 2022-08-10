@@ -5,6 +5,7 @@ pub enum Project {
     GheoTech,
     MerkleTree,
     RustPhantom,
+    ActixServer,
 }
 
 pub struct ProjectMeta {
@@ -60,6 +61,16 @@ impl From<&Project> for ProjectMeta {
                 Some("https://gheo.tech/rust-phantom-poc/".to_string()),
                 "https://github.com/Gheo-Tech/rust-phantom-poc",
                 "https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/seedphantom.png"
+            },
+            ActixServer => {
+                "Actix API for MongoDB",
+                "Actix WebServer simulating the blockchain part of a DeFi game. It was written
+                    via Test Driven Development and features Table Driven Testing based on
+                    declarative macros. I love the result so I am showcasing it I whenever
+                    I have the chance.",
+                None,
+                "https://github.com/Gheo-Tech/sacred-queens/tree/main/demo/server/",
+                "https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/sacred_queens_demo_server.png"
             },
         )
     }

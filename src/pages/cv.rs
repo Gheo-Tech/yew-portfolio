@@ -60,7 +60,7 @@ impl Component for CV {
             <div class="container fade-in" style="max-width: 1200px">
                 <div class="title is-4 container has-text-centered">
                     {"Curriculum Vitae"}
-                    <div class="jobtext" style="font-size: 12px">
+                    <div class="jobtext" style="font-size: 14px">
                         <a href={CV_URI}>{"download pdf"}</a></div>
                 </div>
                 < JobCard job={Job::GheoTech} />

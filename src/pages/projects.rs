@@ -17,6 +17,7 @@ impl Component for Projects {
                < ProjectCard project={Project::GheoTech} />
                < ProjectCard project={Project::MerkleTree} />
                < ProjectCard project={Project::RustPhantom} />
+               < ProjectCard project={Project::ActixServer} />
             </div>
         }
     }

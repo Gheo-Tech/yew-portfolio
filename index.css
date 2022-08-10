@@ -254,7 +254,7 @@ input[type="text"] {
 }
 
 .homecolumnright {
-  max-height: 90vh;
+  max-height: 93vh;
   overflow: hidden;
   text-overflow: clip;
 }
@@ -262,7 +262,7 @@ input[type="text"] {
 .homedemocode {
   position: relative;
   top: 0px;
-  min-width: 600px;
+  min-width: 615px;
   background-color: black;
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 12px;

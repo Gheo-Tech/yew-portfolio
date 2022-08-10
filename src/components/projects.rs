@@ -4,6 +4,7 @@ use yew::prelude::*;
 pub enum Project {
     GheoTech,
     MerkleTree,
+    RustPhantom,
 }
 
 pub struct ProjectMeta {
@@ -50,6 +51,15 @@ impl From<&Project> for ProjectMeta {
                 Some("https://gheo-tech.github.io/yew-merkle-tree".to_string()),
                 "https://github.com/Gheo-Tech/yew-merkle-tree",
                 "https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/merkeltree.png"
+            },
+            RustPhantom => {
+                "Rust - Phantom POC",
+                "Small POC showcasing how Seed (a Rust front-end framework) can be used
+                    to interact with the Phantom Wallet (for the Solana chain). This technology
+                    can be used as an alternative to TypeScript/React to create dApps.",
+                Some("https://gheo.tech/rust-phantom-poc/".to_string()),
+                "https://github.com/Gheo-Tech/rust-phantom-poc",
+                "https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/seedphantom.png"
             },
         )
     }

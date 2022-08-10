@@ -241,10 +241,10 @@ input[type="text"] {
 }
 
 .homecolumnleft {
-  animation: homeflyinleft 2s ease-out;
+  animation: homefadeinleft 2s ease-out;
 }
 
-@keyframes homeflyinleft {
+@keyframes homefadeinleft {
  0%   {
  transform: scale(80%);
  }
@@ -317,3 +317,36 @@ input[type="text"] {
     max-height: 65px;
   }
 }
+
+.flyfromright {
+  animation: fly-from-right 500ms ease-out;
+}
+@keyframes fly-from-right {
+  0% { transform: translateX(1vw); }
+  100% { transform: translateX(0); }
+}
+
+.flyfromleft {
+  animation: fly-from-left 500ms ease-out;
+}
+@keyframes fly-from-left {
+  0% { transform: translateX(-1vw); }
+  100% { transform: translateX(0); }
+}
+
+.flyfromtop {
+  animation: fly-from-top 500ms ease-out;
+}
+@keyframes fly-from-top {
+  0% { transform: translateY(-1vw); }
+  100% { transform: translateY(0); }
+}
+
+.flyfrombottom {
+  animation: fly-from-bottom 500ms ease-out;
+}
+@keyframes fly-from-bottom {
+  0% { transform: translateY(1vw); }
+  100% { transform: translateY(0); }
+}
+

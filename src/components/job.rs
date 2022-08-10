@@ -40,7 +40,7 @@ impl From<&Job> for JobMeta {
             }  };
         }
         match_j!(
-            GheoTech => { "Rust Developer", "Gheo Tech", "09/2022", "present", "gheotech" },
+            GheoTech => { "Engineer, Consultant", "Gheorghe Technologies SRL", "09/2022", "present", "gheotech" },
             Kape => { "Infrastructure Architect", "Kape", "09/2018", "08/2022", "kape" },
             Vodafone => { "Private Cloud Engineer", "Vodafone", "04/2015", "09/2018", "vodafone" },
             IBM => { "Java Dev, Sysadmin", "IBM", "05/2014", "04/2015", "ibm" },

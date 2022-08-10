@@ -20,6 +20,10 @@ impl Component for Contact {
                 <div class="subtitle is-7 has-text-centered">
                     {"Due to the advanced bot protection, copy-paste will not work."}
                 </div>
+                <div class="columns is-mobile" style="margin-bottom: 30px">
+                    <div class="column is-4 has-text-right">{"schedule:"}</div>
+                    <div class="column" style="margin-left: 13px">{"11:00 am - 01:00 am UTC"}</div>
+                </div>
                 <div class="columns is-mobile">
                     <div class="column is-4 has-text-right"
                         style="margin-top: 10px">{"email:"}</div>

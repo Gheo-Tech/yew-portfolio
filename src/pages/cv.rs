@@ -1,6 +1,8 @@
 use crate::components::job::{Job, JobCard};
 use yew::prelude::*;
 
+const CV_URI: &str = "https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/Gheorghe_Ungureanu_Resume_10-08-2022-18-47-29.pdf";
+
 struct Education<'a> {
     title: &'a str,
     institution: &'a str,
@@ -56,8 +58,10 @@ impl Component for CV {
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
             <div class="container fade-in" style="max-width: 1200px">
-                <div class="title is-4 has-text-centered">
+                <div class="title is-4 container has-text-centered">
                     {"Curriculum Vitae"}
+                    <div class="jobtext" style="font-size: 10px">
+                        <a href={CV_URI}>{"download pdf"}</a></div>
                 </div>
                 < JobCard job={Job::GheoTech} />
                 < JobCard job={Job::Kape} />

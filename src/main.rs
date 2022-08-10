@@ -8,17 +8,14 @@ use yew::html::Scope;
 pub enum Route {
     #[at("/")]
     Home,
-    #[at("/skills")]
+    #[at("/#/skills")]
     Skills,
-    #[at("/cv")]
+    #[at("/#/cv")]
     CV,
-    #[at("/projects")]
+    #[at("/#/projects")]
     Projects,
-    #[at("/contact")]
+    #[at("/#/contact")]
     Contact,
-    #[not_found]
-    #[at("/404")]
-    NotFound,
 }
 
 pub enum Msg {
@@ -111,7 +108,6 @@ fn switch(routes: &Route) -> Html {
         Route::CV => html! { <pages::cv::CV/> },
         Route::Projects => html! { <pages::projects::Projects /> },
         Route::Contact => html! { <pages::contact::Contact /> },
-        Route::NotFound => todo!(),
     }
 }
 

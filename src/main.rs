@@ -8,13 +8,13 @@ use yew::html::Scope;
 pub enum Route {
     #[at("/")]
     Home,
-    #[at("/#/skills")]
+    #[at("/skills")]
     Skills,
-    #[at("/#/cv")]
+    #[at("/cv")]
     CV,
-    #[at("/#/projects")]
+    #[at("/projects")]
     Projects,
-    #[at("/#/contact")]
+    #[at("/contact")]
     Contact,
 }
 

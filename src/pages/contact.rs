@@ -35,7 +35,7 @@ impl Component for Contact {
                 <div class="columns is-mobile">
                     <div class="column is-4 has-text-right flyfromleft">{"email:"}</div>
                     <div class="column flyfromright">
-                        <img style="max-height: 42px; margin-left:-7px; margin-top: -10px"
+                        <img class="contactimg"
                             src="https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/email.png"/>
                         <div class="subtitle is-7">
                             {"Due to the advanced bot protection, copy-paste will not work."}
@@ -45,7 +45,7 @@ impl Component for Contact {
                 <div class="columns is-mobile flyfrombottom">
                     <div class="column is-4 has-text-right flyfromleft">{"phone:"}</div>
                     <div class="column flyfromright">
-                        <img style="max-height: 42px; margin-left:-7px; margin-top: -10px"
+                        <img class="contactimg"
                             src="https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/number.png"/>
                         <div class="subtitle is-7">
                             {"Signal, WhatsApp and Telegram are available for this number."}

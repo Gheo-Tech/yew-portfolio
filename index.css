@@ -350,3 +350,10 @@ input[type="text"] {
   100% { transform: translateY(0); }
 }
 
+.contactimg {
+  height:
+  42px;
+  width: 177px;
+  margin-left:-7px;
+  margin-top: -10px;
+}

@@ -66,7 +66,7 @@ impl From<&Project> for ProjectMeta {
                 "Actix API for MongoDB",
                 "Actix WebServer simulating the blockchain part of a DeFi game. It was written
                     via Test Driven Development and features Table Driven Testing based on
-                    declarative macros. I love the result so I am showcasing it I whenever
+                    declarative macros. I love the result so I am showcasing it whenever
                     I have the chance.",
                 None,
                 "https://github.com/Gheo-Tech/sacred-queens/tree/main/demo/server/",

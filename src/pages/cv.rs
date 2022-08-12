@@ -1,7 +1,7 @@
 use crate::components::job::{Job, JobCard};
 use yew::prelude::*;
 
-const CV_URI: &str = "https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/Gheorghe_Ungureanu_Resume_10-08-2022-18-47-29.pdf";
+const CV_URI: &str = "https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/Gheorghe_Ungureanu_Resume_13-08-2022-00-21-55.pdf";
 
 struct Education<'a> {
     title: &'a str,

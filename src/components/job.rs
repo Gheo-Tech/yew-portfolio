@@ -40,8 +40,8 @@ impl From<&Job> for JobMeta {
             }  };
         }
         match_j!(
-            GheoTech => { "Engineer, Consultant", "Gheorghe Technologies SRL", "09/2022", "present", "gheotech" },
-            Kape => { "Infrastructure Architect", "Kape", "09/2018", "08/2022", "kape" },
+            GheoTech => { "Engineer, Consultant", "Gheorghe Technologies SRL", "08/2022", "present", "gheotech" },
+            Kape => { "Infrastructure Architect", "Kape", "09/2018", "07/2022", "kape" },
             Vodafone => { "Private Cloud Engineer", "Vodafone", "04/2015", "09/2018", "vodafone" },
             IBM => { "Java Dev, Sysadmin", "IBM", "05/2014", "04/2015", "ibm" },
             Freelance => { "Freelancer", "Multiple Projects", "2010", "2015", "freelance" },

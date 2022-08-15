@@ -169,7 +169,8 @@ impl Component for JobCard {
             ($title:expr) => {{
                 html! {
                     <div class="column is-4 has-text-centered">
-                        <button style="width: 55px" class={classes!("button", "is-white", "is-outlined",
+                        <button style="max-width: 100px; height: 28px;"
+                            class={classes!("button", "is-white", "is-outlined",
                             menu_button_weight(TextVisibility::$title))}
                             onclick={ctx.link().callback(|_| Msg::Text(TextVisibility::$title))}>
                         {TextVisibility::$title.to_string()}</button>
@@ -197,8 +198,9 @@ impl Component for JobCard {
                     </div>
                     <div class="column is-2 has-text-centered">
                         <div class="button is-white is-outlined jobbutton"
+                            style="height: 26px; width: 28px; padding: 4px 0px 0px 0px; border: 0px;"
                             onclick={ctx.link().callback(|_| Msg::Buttons)}>
-                            if !self.menu { <strong>{ "▼" }</strong> } else { { "▲" } }
+                            if !self.menu { { "▼" } } else { { "▲" } }
                         </div>
                     </div>
                     <div class="column is-5 has-text-right">

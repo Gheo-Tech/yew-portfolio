@@ -58,6 +58,12 @@ impl Component for Home {
                           </button>
                       </Link<Route>>
                       <br/>
+                      <a href="https://blog.gheo.tech">
+                          <button class="button is-black is-fullwidth">
+                              {"Blog"}
+                          </button>
+                      </a>
+                      <br/>
                   </div>
                 </div>
                 </div>

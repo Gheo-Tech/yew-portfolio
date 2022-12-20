@@ -42,26 +42,25 @@ impl Component for Contact {
                         </div>
                     </div>
                 </div>
-                <div class="columns is-mobile flyfrombottom">
-                    <div class="column is-4 has-text-right flyfromleft">{"phone:"}</div>
-                    <div class="column flyfromright">
-                        <img class="contactimg"
-                            src="https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/number.png"/>
-                        <div class="subtitle is-7">
-                            {"Signal, WhatsApp and Telegram are available for this number."}
-                        </div>
-                    </div>
-                </div>
 
                 <div class="columns is-mobile flyfrombottom">
-                    <div class="column is-4 has-text-right"></div>
+                    <div class="column is-4 has-text-right">{"media:"}</div>
                     <div class="column" style="max-width: 400px">
-                        <div class="jobtext flyfromright">
-                            {"...or just go for "}
-                            <a target="_blank" href="https://www.linkedin.com/in/gun1x/">
-                                {"linkedin"}
-                            </a>
-                        </div>
+                       <a target="_blank" href="https://blog.gheo.tech">
+                           <button class="button is-small is-black">{"Blog"}</button>
+                       </a>
+                       {" "}
+                       <a target="_blank" href="https://twitter.com/gheotech/">
+                           <button class="button is-small is-black">{"Twitter"}</button>
+                       </a>
+                       {" "}
+                       <a target="_blank" href="https://instagram.com/gheo.tech">
+                           <button class="button is-small is-black">{"Instagram"}</button>
+                       </a>
+                       {" "}
+                       <a target="_blank" href="https://www.linkedin.com/in/ghe0/">
+                           <button class="button is-small is-black">{"LinkedIn"}</button>
+                       </a>
                     </div>
                 </div>
 

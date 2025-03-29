@@ -2,6 +2,7 @@ use yew::prelude::*;
 
 #[derive(PartialEq)]
 pub enum Project {
+    DeTEE,
     GheoTech,
     MerkleTree,
     RustPhantom,
@@ -33,6 +34,14 @@ impl From<&Project> for ProjectMeta {
             }  };
         }
         match_p!(
+            DeTEE => {
+                "DeTEE",
+                "A community powered cloud platform based on Trusted Execution Environments (TEEs).
+                    This is probably the biggest project of my entire career.",
+                Some("https://detee.ltd".to_string()),
+                "https://gitea.detee.cloud/general",
+                "https://filedn.com/lRvVNpEzu7mVLW5g3Ak9iOk/detee.png"
+            },
             GheoTech => {
                 "This Website",
                 "Normally developers will create their portofolio website using React.

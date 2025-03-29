@@ -14,6 +14,7 @@ impl Component for Projects {
         html! {
             <div class="container fade-in" style="max-width: 1000px">
                <div class="subtitle is-4 has-text-centered">{"Projects"}</div>
+               < ProjectCard project={Project::DeTEE} />
                < ProjectCard project={Project::GheoTech} />
                < ProjectCard project={Project::MerkleTree} />
                < ProjectCard project={Project::RustPhantom} />
